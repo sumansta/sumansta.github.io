@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: github
+  repo: sumansta/sumansta.github.io
 
 media_folder: static/assets
 public_folder: assets
