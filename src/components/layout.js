@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import { rhythm, scale } from "../utils/typography"
+import NavBar from "../components/Navbar"
 
 class Layout extends React.Component {
   render() {
@@ -55,26 +56,7 @@ class Layout extends React.Component {
     }
     return (
       <Wrapper style={{ backgroundColor: "#121212" }}>
-        <nav class="flex items-center justify-between flex-wrap bg-black-600 p-6">
-          <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <span class="font-mono text-xl tracking-tight">
-              <Link to="/">Suman Shrestha</Link>
-            </span>
-          </div>
-          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-            <div class="text-sm lg:flex-grow">
-              <a
-                href="#responsive-header"
-                class="block mt-4 lg:inline-block lg:mt-0 text-white over:text-white"
-              >
-                <Link to="/blog/">
-                  <span class="font-mono">Blog</span>
-                </Link>
-              </a>
-            </div>
-          </div>
-        </nav>
-
+        <NavBar />
         <div class="container mx-auto">
           <header>{header}</header>
           <main>{children}</main>

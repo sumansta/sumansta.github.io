@@ -13,11 +13,11 @@ class Blog extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <div class="grid grid-cols-3 gap-4">
+        <div class="container">
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
-              <div class="mx-8 rounded overflow-hidden shadow-md bg-gray-200">
+              <div class="mx-8 my-4 rounded overflow-hidden shadow-md bg-gray-200">
                 <div class="px-6 py-4">
                   <div key={node.fields.slug}>
                     <div class="font-bold text-xl mb-2">
