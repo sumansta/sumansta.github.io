@@ -54,22 +54,35 @@ class Layout extends React.Component {
       )
     }
     return (
-      <Wrapper>
-        <div
-          style={{
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            maxWidth: rhythm(24),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          }}
-        >
+      <Wrapper style={{ backgroundColor: "#121212" }}>
+        <nav class="flex items-center justify-between flex-wrap bg-black-600 p-6">
+          <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <span class="font-mono text-xl tracking-tight">
+              <Link to="/">Suman Shrestha</Link>
+            </span>
+          </div>
+          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+              <a
+                href="#responsive-header"
+                class="block mt-4 lg:inline-block lg:mt-0 text-white over:text-white"
+              >
+                <Link to="/blog/">
+                  <span class="font-mono">Blog</span>
+                </Link>
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container mx-auto">
           <header>{header}</header>
           <main>{children}</main>
         </div>
         <Footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <span class="font-mono text-white">
+            © {new Date().getFullYear()} Suman Shrestha
+          </span>
         </Footer>
       </Wrapper>
     )

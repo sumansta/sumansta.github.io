@@ -1,7 +1,8 @@
+const path = require("path")
+
 module.exports = {
   siteMetadata: {
-    // edit below
-    title: `Suman's Blog`,
+    title: ``,
     author: `Suman Shrestha`,
     description: ``,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
@@ -17,6 +18,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-feed-mdx`,
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,8 +29,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
       },
     },
     {
@@ -70,14 +72,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Suman Shrestha`,
+        short_name: `Suman Shrestha`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        // icon: `content/assets/gatsby-icon.png`,
       },
     },
     {
