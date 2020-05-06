@@ -8,10 +8,10 @@ import {
 
 const social = [
   {
-    title: "Instagram",
-    icon: FaInstagram,
-    link: "https://www.instagram.com/suman_sta/",
-    class: "bg-instagram",
+    title: "GitHub",
+    icon: FaGithubAlt,
+    link: "https://github.com/sumansta",
+    class: "bg-github",
   },
   {
     title: "LinkedIn",
@@ -20,10 +20,10 @@ const social = [
     class: "bg-linkedin",
   },
   {
-    title: "GitHub",
-    icon: FaGithubAlt,
-    link: "https://github.com/sumansta",
-    class: "bg-github",
+    title: "Instagram",
+    icon: FaInstagram,
+    link: "https://www.instagram.com/suman_sta/",
+    class: "bg-instagram",
   },
   {
     title: "Facebook",

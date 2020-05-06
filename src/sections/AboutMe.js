@@ -21,7 +21,7 @@ const AboutMe = () => {
     <section id="about-me">
       <div className="grid lg:grid-cols-6 gap-12 items-center">
         <div className="sm:w-3/4 md:block lg:col-span-2 w-3/4 lg:w-3/4 mx-auto">
-          <GatsbyImage {...data.photo.childImageSharp} />
+          {/* <GatsbyImage {...data.photo.childImageSharp} /> */}
         </div>
         <div className="text-justify lg:col-span-4  sm:w-4/5 mx-auto">
           <h1 class="text-white text-xl">Suman Shrestha</h1>

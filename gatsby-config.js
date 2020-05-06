@@ -33,6 +33,14 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: path.join(__dirname, `src`, `data`),
+      },
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
