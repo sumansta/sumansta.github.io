@@ -12,7 +12,7 @@ class IndexPage extends React.Component {
     return (
       <Layout location={this.props.location}>
         <AboutMe />
-        {/* <Work /> */}
+        <Work />
       </Layout>
     )
   }
