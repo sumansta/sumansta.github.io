@@ -19,34 +19,27 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy                          # the main title
+title: Suman Shrestha                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline:  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+url: 'https://sumansta.github.io/'
 
 github:
-  username: github_username             # change to your github username
-
+  username: sumansta             
 twitter:
-  username: twitter_username            # change to your twitter username
+  username: suman_sta            
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com             # change to your email address
+  name: Suman Shrestha
+  email: suman.ss.shrestha@gmail.com
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://twitter.com/suman_sta     
+    - https://github.com/sumansta    
+    - https://www.linkedin.com/in/suman-ss-shrestha/
 
 google_site_verification:               # fill in to your verification string
 
@@ -60,28 +53,10 @@ google_analytics:
     proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
     cache_path:       # the local PV cache data, friendly to visitors from GFW region
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
-#
-theme_mode:   # [light|dark]
-
-# The CDN endpoint for images.
-# Notice that once it is assigned, the CDN url
-# will be added to all image (site avatar & posts' images) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
-img_cdn:
+theme_mode: [dark]
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: 'https://pbs.twimg.com/profile_images/1430207118955585540/KG8NUxPk_400x400.jpg'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
